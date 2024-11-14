@@ -1,0 +1,106 @@
+##please remove ALL comments before submission 
+# this is further extensable for more runs simply copy/paste section A and incrementing the run number
+# see appendix for example format that needs to replace "desired output"
+# powershell scrip is availabel for reformatting to print/writefile fuction
+
+
+
+##run count tracking
+import os
+
+# File to store the run count
+counter_file = "run_counter.txt"
+
+# Initialize the counter
+if os.path.exists(counter_file):
+    with open(counter_file, "r") as file:
+        run_count = int(file.read().strip())
+else:
+    run_count = 0
+
+# Increment the counter
+run_count += 1
+
+# Save the updated counter
+with open(counter_file, "w") as file:
+    file.write(str(run_count))
+
+
+## Section A
+if run_count == 1:
+    print("desired output", end="")
+if run_count == 2:
+    print("desired output", end="")
+if run_count == 3:
+    print("desired output", end="")
+if run_count == 4:
+    print("desired output", end="")
+if run_count == 5:
+    print("desired output", end="")
+if run_count == 6:
+    print("desired output", end="")
+if run_count == 7:
+    print("desired output", end="")
+if run_count == 8:
+    print("desired output", end="")
+if run_count == 9:
+    print("desired output", end="")
+if run_count == 10:
+    print("desired output", end="")
+    
+
+
+
+##eof traceback mitigation
+    while True:
+        try:
+            user_input = input()
+        except EOFError:
+            break
+        if user_input == "":
+            break
+
+
+##end of code
+
+
+##Appendix
+'''
+under section A you can copy/paste the following code and replace "desired output" with the desired output
+
+if run_count == 1:
+    print("this is line 1", end="")
+    print("this is line2 below is a empty line", end="")
+    print(, end="")
+    print("dont use \n for readability", end="")
+    print("anything between the quotes will be printed as is", end="")
+'''
+
+##please remove ALL comments before submission
+##but do make sure you show zybooks how much you appreicate them 
+# by leaving the section section below in your code it wont affect the output
+
+'''
+        ___
+       |    ||
+       |\___/|
+       |     |
+       |     |
+       |     |
+       |     |
+       |     |
+       |     |
+   _||_|__
+  /    |     |     \
+ /     |     |    | \
+|      |     |    |  |
+|      |     |    |  |
+|                 |  |
+|                 |  |
+|                    /
+|                   /
+ \                 /
+  \               /
+   |             |
+   |             |
+'''
